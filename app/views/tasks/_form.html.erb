@@ -1,0 +1,14 @@
+<%= form_with(model: task, class: "contents sm:flex", data: { turbo_stream: true, controller: 'task' }) do |form| %>
+
+  <div class="grow">
+      <input type="text" name="task[task_name]" class="form-input" placeholder="Insert task" data-task-target="description" >
+  </div>
+
+  <span data-task-target="error" class="text-red-500">
+  </span>
+
+  <div class="flex gap-2">
+    <%= link_to "Cancel" , tasks_path, class:'btn-secondary w-full text-center' if action_name=='edit' %>
+      <button class="btn-primary w-full" data-action="click->task#validate" > Create Task</button>
+  </div>
+  <% end %>

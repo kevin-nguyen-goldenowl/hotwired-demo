@@ -1,0 +1,10 @@
+fr:
+  login_page:
+    email: 'E-mail'
+    password: 'Mot de passe'
+    log_in: 'Connexion'
+    sign_up: "S'inscrire"
+    remember_me: 'Se souvenir de moi'
+    forgot_your_password: 'Mot de passe oublié ?'
+    minimum_characters: 'Minimum de %{min} caractères'
+    password_confirmation: 'Confirmation du mot de passe'

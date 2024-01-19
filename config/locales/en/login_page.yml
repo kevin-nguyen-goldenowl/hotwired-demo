@@ -1,0 +1,10 @@
+en:
+  login_page:
+    email: 'Email'
+    password: 'Password'
+    log_in: 'Log in'
+    sign_up: 'Sign up'
+    remember_me: 'Remember me'
+    forgot_your_password: 'Forgot your password?'
+    minimum_characters: '%{min} characters minimum'
+    password_confirmation: 'Password Confirmation'

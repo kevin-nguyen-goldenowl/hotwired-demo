@@ -1,0 +1,10 @@
+cn:
+  login_page:
+    email: '电子邮件'
+    password: '密码'
+    log_in: '登录'
+    sign_up: '注册'
+    remember_me: '记住我'
+    forgot_your_password: '忘记密码？'
+    minimum_characters: '%{min}字符最小'
+    password_confirmation: '确认密码'

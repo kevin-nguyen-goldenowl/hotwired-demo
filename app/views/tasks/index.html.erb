@@ -1,0 +1,12 @@
+<div class="d-flex items-center h-full w-full">
+  <div class="inner-container">
+    <h1 class="title">Tasks</h1>
+
+    <%= render "form" , task: @task %>
+
+      <div id="tasks" class="grid gap-2">
+        <%= render @tasks %>
+      </div>
+  </div>
+
+</div>
