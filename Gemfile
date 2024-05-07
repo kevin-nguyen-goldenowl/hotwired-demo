@@ -46,6 +46,10 @@ gem 'devise', '~> 4.9', '>= 4.9.3'
 
 gem 'pg', '~> 1.5', '>= 1.5.4'
 
+gem 'slim-rails', '~> 3.1', '>= 3.1.1'
+
+gem 'simple_form', '~> 5.3'
+
 # Use Sass to process CSS
 # gem 'sassc-rails'
 

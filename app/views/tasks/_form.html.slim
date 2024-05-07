@@ -1,0 +1,6 @@
+= simple_form_for Task.new, data: {  turbo_stream: true, controller: 'task' } do |f|
+  = f.input :task_name,
+            label_html: { class: 'block' },
+            input_html: { class: 'form-input my-2 p-2', data: { 'task-target': 'description' } }
+  button.btn-primary.w-full data-action="click->task#validate"
+    | Create Task

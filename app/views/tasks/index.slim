@@ -1,0 +1,6 @@
+.d-flex.items-center.h-full.w-full
+  .inner-container
+    .title Tasks
+    = render 'form'
+    #task-lists.grid.gap-2
+      = render @tasks

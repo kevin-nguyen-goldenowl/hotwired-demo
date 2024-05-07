@@ -1,0 +1,7 @@
+.task-wrapper id="task-#{task.id}"
+  .flex.items-center.justify-between
+    .task-name
+      = task.task_name
+    .task-action
+      = link_to 'delete', task_path(id: task.id),  data: { turbo_method: :delete }, class: 'text-sm mx-2'
+      = link_to 'status', task_path(id: task.id),  data: { turbo_method: :put }, class: 'text-sm mx-2'

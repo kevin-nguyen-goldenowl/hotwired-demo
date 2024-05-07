@@ -3,7 +3,6 @@ class TasksController < ApplicationController
 
   def index
     @tasks = Task.all.order(created_at: :desc)
-    @task = Task.new
   end
 
   def edit; end
@@ -14,7 +13,7 @@ class TasksController < ApplicationController
 
     respond_to do |format|
       format.turbo_stream do
-        render turbo_stream: turbo_stream.prepend('tasks', partial: 'tasks/task', locals: { task: @task })
+        render turbo_stream: turbo_stream.prepend('task-lists', partial: 'tasks/task', locals: { task: @task })
       end
     end
   end
@@ -34,7 +33,7 @@ class TasksController < ApplicationController
 
     respond_to do |format|
       format.turbo_stream do
-        render turbo_stream: turbo_stream.remove(@task)
+        render turbo_stream: turbo_stream.remove("task-#{@task.id}")
       end
     end
   end
